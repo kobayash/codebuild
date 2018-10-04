@@ -3,9 +3,9 @@
 GROUP_NAME=$DEPLOYMENT_GROUP_NAME
 
 # 一時ファイルを複製
-cp /var/www/html/wp-config.php /var/tmp/html/wp/wp-config.php
+cp /var/www/html/wp-config.php /var/tmp/html/wp-config.php
 rm -rf /var/www/html
-cp -rdf /var/tmp/html/wp /var/www/html
+cp -rdf /var/tmp/html /var/www/html
 
 chown -R nginx:nginx /var/www/html
 
