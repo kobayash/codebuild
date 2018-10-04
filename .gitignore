@@ -5,6 +5,8 @@ node_modules
 guide
 .env
 /wp/*
+!/wp/deploy
+!/wp/appspec.yml
 !/wp/wp-content/
 /wp/wp-content/*
 !/wp/wp-content/plugins/
