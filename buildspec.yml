@@ -1,9 +1,15 @@
 version: 0.2
- 
 phases:
   install:
     commands:
       - npm install
   build:
     commands:
-      - frp build -p
+      - frp build --production --config=frp.config.js
+artifacts:
+  files:
+    - '**/*'
+  base-directory: wp
+cache:
+  paths:
+    - node_modules/**/*
