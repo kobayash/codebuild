@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/tmp/html
+hooks:
+  ApplicationStop:
+    - location: /deploy/ApplicationStop.sh
+  BeforeInstall:
+    - location: /deploy/BeforeInstall.sh
+  AfterInstall:
+    - location: /deploy/AfterInstall.sh
+  ApplicationStart:
+    - location: /deploy/ApplicationStart.sh
+
